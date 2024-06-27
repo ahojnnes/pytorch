@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: pytorch/pytorch
-          fetch-depth: 0
+          fetch-depth: 1
           path: pytorch
 
       - name: Setup Linux
