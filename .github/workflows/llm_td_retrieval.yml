@@ -51,8 +51,7 @@ jobs:
       - name: Setup Conda
         uses: conda-incubator/setup-miniconda@v2.1.1
         with:
-          miniconda-version: "py39_4.12.0"
-          python-version: 3.9
+          installer-url: https://ossci-metrics.s3.amazonaws.com/Miniconda3-py39_4.12.0-Linux-x86_64.sh
 
       - name: Install Requirements
         shell: bash -l {0}
